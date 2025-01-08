@@ -1,0 +1,13 @@
+prefix=D:/GitHUB/ML_Pipeline_Project/envo/Library
+exec_prefix=D:/GitHUB/ML_Pipeline_Project/envo/Library
+libdir=D:/GitHUB/ML_Pipeline_Project/envo/Library/lib
+sharedlibdir=D:/GitHUB/ML_Pipeline_Project/envo/Library/lib
+includedir=D:/GitHUB/ML_Pipeline_Project/envo/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
