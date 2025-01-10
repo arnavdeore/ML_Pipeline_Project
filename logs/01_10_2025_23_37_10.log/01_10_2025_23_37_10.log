@@ -1,0 +1,10 @@
+[ 2025-01-10 23:37:12,490 ] 22 root - INFO - Data Ingestion Started
+[ 2025-01-10 23:37:12,490 ] 25 root - INFO - Data reading using Pandas Library from local System
+[ 2025-01-10 23:37:12,515 ] 29 root - INFO - Data reading Completed
+[ 2025-01-10 23:37:12,619 ] 34 root - INFO - Data Splited into train and test
+[ 2025-01-10 23:37:12,724 ] 40 root - INFO - Data Inhestion Completed
+[ 2025-01-10 23:37:12,830 ] 79 root - INFO - Outliers capped on train data
+[ 2025-01-10 23:37:12,863 ] 84 root - INFO - Outliers capped on test data
+[ 2025-01-10 23:37:12,863 ] 29 root - INFO -  Data Transformation started 
+[ 2025-01-10 23:37:12,863 ] 91 root - INFO - Splitting train data into Dependent and Independent features
+[ 2025-01-10 23:37:12,869 ] 96 root - INFO - Splitting test data into Dependent and Independent features
