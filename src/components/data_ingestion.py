@@ -6,12 +6,13 @@ from src.exception import CustomException
 from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
 from src.components.data_transformation import DataTransformation
+from src.components.model_trainer import Modeltrainer
 
 @dataclass
 class DataIngestionConfig:
-    train_data_path = os.path.join("artifacts", "train.csv")
-    test_data_path = os.path.join("artifacts", "test.csv")
-    raw_data_path = os.path.join("artifacts", "raw.csv")
+    train_data_path = os.path.join("artifacts/data_ingestion", "train.csv")
+    test_data_path = os.path.join("artifacts/data_ingestion", "test.csv")
+    raw_data_path = os.path.join("artifacts/data_ingestion", "raw.csv")
 
 class DataIngestion:
     def __init__(self):
@@ -36,7 +37,7 @@ class DataIngestion:
             train_set.to_csv(self.ingestion_config.train_data_path, index = False, header = True)
             test_set.to_csv(self.ingestion_config.test_data_path, index = False, header = True)
             
-            logging.info("Data Inhestion Completed")
+            logging.info("Data Ingestion Completed")
 
             return(
                 self.ingestion_config.train_data_path,
@@ -51,5 +52,13 @@ if __name__ == "__main__":
     obj = DataIngestion()
     train_data_path, test_data_path = obj.initiate_data_ingestion()
 
-    train_arr, test_arr, _ = DataTransformation.initiate_data_transformation(train_data_path, test_data_path)
+    # Create an instance of the DataTransformation class
+    data_transformation = DataTransformation()
+
+    # Call the method using the instance
+    train_arr, test_arr, _ = data_transformation.initiate_data_transformation(train_data_path, test_data_path)
+
+    modeltrainer = Modeltrainer()
+
+    print(modeltrainer.initiate_model_trainer(train_arr, test_arr))
     
