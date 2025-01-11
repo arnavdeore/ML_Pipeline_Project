@@ -1,0 +1,4 @@
+[ 2025-01-11 14:25:42,098 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-01-11 14:25:42,102 ] 97 werkzeug - INFO -  * Debugger PIN: 697-866-796
+[ 2025-01-11 14:26:04,698 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jan/2025 14:26:04] "GET / HTTP/1.1" 200 -
+[ 2025-01-11 14:26:04,737 ] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jan/2025 14:26:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
