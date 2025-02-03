@@ -1,6 +1,12 @@
 # ML_Pipeline_Project
 This project focuses on developing a machine-learning pipeline to streamline data processing, model training, and evaluation. The pipeline is designed to handle various stages of a typical machine-learning workflow, ensuring modularity and scalability.
 
+---
+
+<p align="center"> <img src="https://miro.medium.com/v2/resize:fit:750/format:webp/1*wtvPen4_SIS6HfmxCs2amw.gif" width="600"></p>
+
+---
+
 # Features
   1. Data Ingestion: Loading and preprocessing data from various sources.
   2. Feature Engineering: Applying transformations to enhance model performance.
